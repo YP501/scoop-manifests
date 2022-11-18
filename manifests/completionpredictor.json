@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "description": "Command-line intellisense based on PowerShell auto-completion",
+    "homepage": "https://github.com/PowerShell/CompletionPredictor",
+    "license": "MIT",
+    "notes": [
+        "This module requires 'PowerShell 7.2 or above' and 'PSReadLine 2.2.2 or above' in order to  display predictions",
+        "",
+        "Use the module by running `Import-Module CompletionPredictor`",
+        "Add the command to your $PROFILE file to have it  run on shell start-up"
+    ],
+    "url": "https://psg-prod-eastus.azureedge.net/packages/completionpredictor.0.1.0.nupkg",
+    "hash": "B9B7F1A1838BCA7142799FF4E2B6B0800E41C0000E477FA149C311EC3D0DD292",
+    "pre_install": "Remove-Item \"$dir\\_rels\", \"$dir\\package\", \"$dir\\*Content*.xml\" -Recurse",
+    "checkver": {
+        "url": "https://www.powershellgallery.com/packages/completionpredictor",
+        "regex": "<h2>([\\d.]+)</h2>"
+    },
+    "autoupdate": {
+        "url": "https://psg-prod-eastus.azureedge.net/packages/completionpredictor.$version.nupkg"
+    },
+    "psmodule": {
+        "name": "CompletionPredictor"
+    }
+}
