@@ -4,7 +4,7 @@
     "homepage": "https://github.com/PowerShell/CompletionPredictor",
     "license": "MIT",
     "notes": [
-        "This module requires 'PowerShell 7.2 or above' and 'PSReadLine 2.2.2 or above' in order to  display predictions",
+        "This module requires 'PowerShell 7.2 or above' and 'PSReadLine 2.2.2 or above' in order to display predictions",
         "",
         "Use the module by running `Import-Module CompletionPredictor`",
         "Add the command to your $PROFILE file to have it run on shell start-up"
